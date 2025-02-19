@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run --coverage --coverage.exclude='index.js'",
+    "watch": "vitest run --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "@vitest/coverage-v8": "^3.0.6",
     "mocha": "^10.3.0",
     "vitest": "^3.0.6"
   }
